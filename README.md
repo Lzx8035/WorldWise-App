@@ -11,13 +11,9 @@ Learned so far: Programmatic navigation
 - useNavigate
 - Navigate component
 
-To learn:
+## and also context API
 
-- useLocation
-- useRoutes
-- Outlet
-
-# and also context API
+combine it with useReducer :)
 
 and also CSS Module
 

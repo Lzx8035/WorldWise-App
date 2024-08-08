@@ -17,6 +17,7 @@ const initialState = {
   error: "",
 };
 
+// Reducer 函数必须是纯函数，不能包含 API 请求等副作用。API 请求需要在 Reducer 外部的单独函数中进行。数据获取后，通过 dispatch 动作来更新 Reducer。
 function reducer(state, action) {
   switch (action.type) {
     case "loading":
@@ -119,7 +120,7 @@ function CitiesProvider({ children }) {
       });
       const data = await res.json();
 
-      dispatch({ type: "city/created", payload: data });
+      dispatch({ type: "city/created", payload: data }); // Update in Api and local, will be solved when we use react query.
     } catch {
       dispatch({
         type: "rejected",
