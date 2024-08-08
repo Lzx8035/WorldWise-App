@@ -84,6 +84,7 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
+  //////////////////////////////////
   const getCity = useCallback(
     async function getCity(id) {
       if (Number(id) === currentCity.id) return;
@@ -104,6 +105,7 @@ function CitiesProvider({ children }) {
     [currentCity.id]
   );
 
+  //////////////////////////////////////
   async function createCity(newCity) {
     dispatch({ type: "loading" });
 
@@ -126,6 +128,7 @@ function CitiesProvider({ children }) {
     }
   }
 
+  /////////////////////////////////////
   async function deleteCity(id) {
     dispatch({ type: "loading" });
 

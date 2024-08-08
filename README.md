@@ -2,7 +2,7 @@
 
 ## Router
 
-Learned so far:
+Learned so far: Programmatic navigation
 
 - Router, Route, Switch
 - Link and NavLin
@@ -20,3 +20,5 @@ To learn:
 # and also context API
 
 and also CSS Module
+
+and Leaflet library
